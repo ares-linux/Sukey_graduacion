@@ -1,0 +1,26 @@
+﻿## enlaces de atribucion de iconos
+
+
+<a href="https://www.flaticon.es/iconos-gratis/capibara" title="capibara iconos">Capibara iconos creados por Anditii Creative - Flaticon</a>
+
+
+<a href="https://www.flaticon.es/iconos-gratis/sombrero" title="sombrero iconos">Sombrero iconos creados por Freepik - Flaticon</a>
+
+
+<a href="https://www.flaticon.es/iconos-gratis/terminar" title="terminar iconos">Terminar iconos creados por Smashicons - Flaticon</a>
+
+
+
+
+## animacion de gato en espera moviendo la cola
+
+
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.8/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/c163ef31-a42d-4be0-b70c-e5fdfca7bff5/wdjfbuRA7L.lottie" style="width: 300px;height: 300px" autoplay loop></dotlottie-wc>
+
+
+## animacion de pulsar el boton para empezar a celebrar
+
+
+<script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.8/dist/dotlottie-wc.js" type="module"></script>
+<dotlottie-wc src="https://lottie.host/8c8040d2-fb92-4730-8288-af252417f9ff/iDnUrUd1JK.lottie" stateMachineId="StateMachine1" style="width: 300px;height: 300px"></dotlottie-wc>

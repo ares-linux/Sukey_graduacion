@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Felicidades por tu Graduación Sukey!</title>
+    <!-- Google Fonts for a premium look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+        rel="stylesheet">
+
+    <!-- Lottie Script -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.8/dist/dotlottie-wc.js" type="module"></script>
+
+    <!-- Link to Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Audio Element (hidden) -->
+    <audio id="bg-music" loop>
+        <!-- The audio file provided in the multimedia folder -->
+        <source
+            src="multimedia/The Winner Takes it all × Uma Musume Pretty Derby ｜ Sub. Español • English ｜『AMV』✩ [BSlDNFKgDXs].mp3"
+            type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Start Screen (Gate) to bypass Autoplay restrictions -->
+    <div id="start-screen" class="screen active">
+        <div class="glass-panel text-center">
+            <h1 class="welcome-title">Bienvenida a tu Celebración</h1>
+            <p class="welcome-subtitle">Enciende el sonido y prepárate para la sorpresa...</p>
+
+            <div class="lottie-container">
+                <!-- Animación de gato en espera moviendo la cola -->
+                <dotlottie-wc src="https://lottie.host/c163ef31-a42d-4be0-b70c-e5fdfca7bff5/wdjfbuRA7L.lottie"
+                    style="width: 250px;height: 250px" autoplay loop></dotlottie-wc>
+            </div>
+
+            <button id="start-btn" class="start-btn">
+                <span>Comenzar</span>
+                <!-- Animación de pulsar el botón -->
+                <dotlottie-wc src="https://lottie.host/8c8040d2-fb92-4730-8288-af252417f9ff/iDnUrUd1JK.lottie"
+                    stateMachineId="StateMachine1" style="width: 150px;height: 150px"></dotlottie-wc>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content Screen -->
+    <div id="main-content" class="screen hidden">
+
+        <!-- Animated Background Elements -->
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+        <div class="bg-orb orb-3"></div>
+
+        <header class="hero-section">
+            <div class="glass-card hero-glass">
+                <img src="multimedia/diploma-y-sombrero-de-graduacion.png" alt="Diploma y Sombrero"
+                    class="hero-icon floating">
+                <h1 class="main-title">¡Felicidades <span class="highlight">Sukey</span>!</h1>
+                <h2 class="sub-title">Por tu increíble Graduación de Secundaria</h2>
+                <div class="capybara-decorations">
+                    <img src="multimedia/Capibara lindo sentado.png" alt="Capibara Sentado"
+                        class="decor-img bobbing delay-1">
+                </div>
+            </div>
+        </header>
+
+        <section class="poem-section">
+            <div class="glass-card poem-glass">
+                <div class="poem-icon-wrapper">
+                    <img src="multimedia/carpincho.png" alt="Carpincho Decorativo" class="poem-icon floating">
+                </div>
+
+                <!-- 
+                ========================================================================
+                AQUÍ PUEDES CAMBIAR EL POEMA
+                ========================================================================
+                Si deseas cambiar el poema por otro que te guste más, o por uno que tú 
+                mismo escribiste, simplemente borra el texto que está entre las etiquetas 
+                <p> y vuelve a escribir lo que desees. 
+                Si quieres agregar otro párrafo, simplemente agrega otra etiqueta: 
+                <p class="poem-text"> Tu nuevo párrafo irá aquí </p>
+                ========================================================================
+                -->
+                <div class="poem-content">
+                    <h3 class="poem-title">Un pequeño poema para ti</h3>
+                    <p class="poem-text">Hoy cierras un ciclo lleno de aprendizajes y aventuras,</p>
+                    <p class="poem-text">dejando tu huella brillante en los pasillos de esta etapa.</p>
+                    <p class="poem-text">Cada esfuerzo, desvelo y risa compartida hoy da frutos,</p>
+                    <p class="poem-text">forjando a la persona increíble en la que te has convertido.</p>
+                    <p class="poem-text">¡Sigue soñando en grande, porque este es solo el comienzo!</p>
+                </div>
+                <!-- =============================================================== -->
+            </div>
+        </section>
+
+        <div class="decoration-bar">
+            <img src="multimedia/Capybara lindo caminando.png" alt="Capibara Caminando" class="decor-img walking-anim">
+            <img src="multimedia/capybara volteando hacia la izquierda.png" alt="Capibara Mirando"
+                class="decor-img bobbing delay-2">
+        </div>
+
+        <section class="gallery-section">
+            <div class="glass-card gallery-glass">
+                <div class="gallery-header">
+                    <img src="multimedia/terminar.png" alt="Incono de Meta" class="gallery-icon">
+                    <h2 class="section-title">Tus Mejores Momentos</h2>
+                    <p class="section-desc">Revive los instantes inolvidables de tu graduación.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- 
+                    =============================================================================
+                    AQUÍ PUEDES AGREGAR TUS FOTOGRAFÍAS REALES DEL EVENTO
+                    =============================================================================
+                    Para añadir fotos de la graduación, guarda tus fotos dentro de la carpeta 
+                    "multimedia" (por ejemplo: "foto1.jpg"). Luego, copia y pega el código de abajo 
+                    (quitando las flechas <!- - y - ->) y cambia el "src" con el nombre de tu foto.
+
+                    <div class="gallery-item">
+                        <img src="multimedia/tu-foto-aqui.jpg" alt="Foto de graduación">
+                    </div>
+                    =============================================================================
+                    -->
+
+                    <!-- Ejemplo 1 (Descomenta y cambia la imagen cuando esté lista) -->
+                    <!-- 
+                    <div class="gallery-item">
+                        <img src="multimedia/foto1.jpg" alt="Recuerdo de Graduación">
+                    </div> 
+                    -->
+
+                    <!-- Ejemplo 2 (Descomenta y cambia la imagen cuando esté lista) -->
+                    <!-- 
+                    <div class="gallery-item">
+                        <img src="multimedia/foto2.jpg" alt="Recuerdo de Graduación">
+                    </div> 
+                    -->
+
+                    <!-- Espacio en blanco indicativo por ahora -->
+                    <div class="gallery-placeholder">
+                        <p>Próximamente...<br>¡Tus fotos de graduación irán aquí!</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <p>Hecho con amor para celebrar la graduación de Sukey 💖</p>
+                <div class="attributions">
+                    <h4>Créditos y Atribuciones de Iconos</h4>
+                    <ul>
+                        <li><a href="https://www.flaticon.es/iconos-gratis/capibara" title="capibara iconos"
+                                target="_blank" rel="noopener">Capibara iconos creados por Anditii Creative -
+                                Flaticon</a></li>
+                        <li><a href="https://www.flaticon.es/iconos-gratis/sombrero" title="sombrero iconos"
+                                target="_blank" rel="noopener">Sombrero iconos creados por Freepik - Flaticon</a></li>
+                        <li><a href="https://www.flaticon.es/iconos-gratis/terminar" title="terminar iconos"
+                                target="_blank" rel="noopener">Terminar iconos creados por Smashicons - Flaticon</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Link to Javascript Logic -->
+    <script src="script.js"></script>
+</body>
+
+</html>
